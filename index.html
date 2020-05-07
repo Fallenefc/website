@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tax Calculator</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style type="text/css" src="style.css"></style>
+</head>
+<body style="margin: 10% 10% 10% 10%">
+
+	<h1 id="peido">Canadian Sales Tax Calculator</h1>
+		</br>
+		</br>
+
+
+  <div class="input-group mb-3" style="width: 30%">
+  <div class="input-group-prepend">
+    <span class="input-group-text">$</span>
+  </div>
+  <input type="text" id="inputEmail3" class="form-control" aria-label="Amount (to the nearest dollar)" >
+  <div class="input-group-append">
+
+  </div>
+</div>
+
+  <div class="input-group mb-3"  style="width: 30%">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Province</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose the Province</option>
+    <option value="AB">Alberta</option>
+    <option value="BC">British Columbia</option>
+    <option value="MB">Manitoba</option>
+    <option value="NB">New Brunswick</option>
+    <option value="NL">Newfoundland/Labrador</option>
+    <option value="NWT">Northwestern Territories</option>
+    <option value="NS">Nova Scotia</option>
+    <option value="NU">Nunavut</option>
+    <option value="ON">Ontario</option>
+    <option value="PEI">Prince Edward Island</option>
+    <option value="QC">Quebec</option>
+    <option value="SK">Saskatchewan</option>
+    <option value="YK">Yukon</option>
+  </select>
+
+
+</div>
+
+
+	</br>
+		<button id="submit" class="btn btn-primary">Submit</button>
+		</br>
+		</br>
+		<div class="alert alert-primary" role="alert" style="width: 25%">
+  <p id="final">Price After Tax: 0</p>
+</div>
+
+	
+<script type="text/javascript" src="taxcalculator.js"></script>
+</body>
+</html>
